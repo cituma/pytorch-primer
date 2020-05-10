@@ -14,7 +14,7 @@ class LogisticRegressionmodel(torch.nn.Module):
         self.linear = torch.nn.Linear(1,1)
 
     def forward(self, x):
-        y_pred = F.sigmoid(self.linear(x))
+        y_pred = F.sigmoid(self.linear(x))      #sigmoid函数
         return y_pred
 model = LogisticRegressionmodel()
 
